@@ -19,7 +19,7 @@ body {
   overflow-x: hidden;
   overflow-y: auto;
   perspective: 1000px;
-  cursor: none;
+  cursor: default;
 }
 
 body.home-theme {
@@ -760,3 +760,4 @@ body.car-theme {
   }
 
 }
+
