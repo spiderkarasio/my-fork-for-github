@@ -222,8 +222,6 @@ setInterval(initializeVisitorCounter, 10);
 
 
 const bioMessages = [
-    "Fu*k Guns.lol & Fakecrime.bio got banned too often, so I created my own.",
-    "Hello, World!",
     "visit beerlanguage.ru pls",
     "Hello World!",
     "my ip is ........ idk",
@@ -665,6 +663,7 @@ const bioMessages = [
   typeWriterStart();
 
 });
+
 
 
 
