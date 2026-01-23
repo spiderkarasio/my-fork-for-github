@@ -249,7 +249,7 @@ const bioMessages = [
       bioIndex--;
     } else if (bioIndex === bioMessages[bioMessageIndex].length) {
       isBioDeleting = true;
-      setTimeout(typeWriterBio, 2000);
+      setTimeout(typeWriterBio, 500);
       return;
     } else if (bioIndex === 0 && isBioDeleting) {
       isBioDeleting = false;
@@ -665,6 +665,7 @@ const bioMessages = [
   typeWriterStart();
 
 });
+
 
 
 
