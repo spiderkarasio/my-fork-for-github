@@ -116,17 +116,13 @@ document.addEventListener('DOMContentLoaded', () => {
   }, 500);
 
 
-let totalVisitors = 100000;
-
 function initializeVisitorCounter() {
-    totalVisitors += Math.floor(Math.random() * 50) + 1; // +1 до +50
-    visitorCount.textContent = totalVisitors.toLocaleString();
+  const totalVisitors = Math.floor(Math.random() * 900000) + 100000;
+  visitorCount.textContent = totalVisitors.toLocaleString();
 }
 
-setInterval(initializeVisitorCounter, 500); // каждые 500мс
-
-
-  initializeVisitorCounter();
+initializeVisitorCounter();
+setInterval(initializeVisitorCounter, 10);
 
 
   startScreen.addEventListener('click', () => {
@@ -660,4 +656,5 @@ setInterval(initializeVisitorCounter, 500); // каждые 500мс
   typeWriterStart();
 
 });
+
 
