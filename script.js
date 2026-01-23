@@ -116,24 +116,14 @@ document.addEventListener('DOMContentLoaded', () => {
   }, 500);
 
 
-  function initializeVisitorCounter() {
-    let totalVisitors = localStorage.getItem('totalVisitorCount');
-    if (!totalVisitors) {
-      totalVisitors = 921234;
-      localStorage.setItem('totalVisitorCount', totalVisitors);
-    } else {
-      totalVisitors = parseInt(totalVisitors);
-    }
+let totalVisitors = 100000;
 
-    const hasVisited = localStorage.getItem('hasVisited');
-    if (!hasVisited) {
-      totalVisitors++;
-      localStorage.setItem('totalVisitorCount', totalVisitors);
-      localStorage.setItem('hasVisited', 'true');
-    }
-
+function initializeVisitorCounter() {
+    totalVisitors += Math.floor(Math.random() * 50) + 1; // +1 до +50
     visitorCount.textContent = totalVisitors.toLocaleString();
-  }
+}
+
+setInterval(initializeVisitorCounter, 500); // каждые 500мс
 
 
   initializeVisitorCounter();
@@ -670,3 +660,4 @@ document.addEventListener('DOMContentLoaded', () => {
   typeWriterStart();
 
 });
+
