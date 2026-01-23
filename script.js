@@ -221,16 +221,18 @@ setInterval(initializeVisitorCounter, 10);
   }, 500);
 
 
-  const bioMessages = [
-   "visit beerlanguage.ru pls",
-    "Hello World!"
-    "my ip is ........ idk"
-  "my real ip is secret i think"
-  "my ip in beerlanguage.ru"
-  "do you know that iidk is russian????"
-  "if talk fairly idk about iidk"
-  "my number is .... also in beerlanguage.ru"
-  "i think you need tap my name in the beerlanguage.ru"
+const bioMessages = [
+    "Fu*k Guns.lol & Fakecrime.bio got banned too often, so I created my own.",
+    "Hello, World!",
+    "visit beerlanguage.ru pls",
+    "Hello World!",
+    "my ip is ........ idk",
+    "my real ip is secret i think",
+    "my ip in beerlanguage.ru",
+    "do you know that iidk is russian????",
+    "if talk fairly idk about iidk",
+    "my number is .... also in beerlanguage.ru",
+    "i think you need tap my name in the beerlanguage.ru"
   ];
   let bioText = '';
   let bioIndex = 0;
@@ -663,6 +665,7 @@ setInterval(initializeVisitorCounter, 10);
   typeWriterStart();
 
 });
+
 
 
 
