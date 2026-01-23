@@ -260,7 +260,7 @@ const bioMessages = [
       profileBio.classList.add('glitch');
       setTimeout(() => profileBio.classList.remove('glitch'), 200);
     }
-    setTimeout(typeWriterBio, isBioDeleting ? 75 : 150);
+    setTimeout(typeWriterBio, isBioDeleting ? 25 : 50);
   }
 
   setInterval(() => {
@@ -665,6 +665,7 @@ const bioMessages = [
   typeWriterStart();
 
 });
+
 
 
 
